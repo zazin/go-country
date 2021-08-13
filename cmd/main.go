@@ -14,7 +14,7 @@ func main() {
 		})
 	})
 	country := controllers.New()
-	r.GET("/country", country.GetUsers)
+	r.GET("/country", country.GetCountries)
 	err := r.Run(":8000")
 	if err != nil {
 		return

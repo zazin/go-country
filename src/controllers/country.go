@@ -22,7 +22,7 @@ func New() *CountryRepository {
 }
 
 //get countries
-func (repository *CountryRepository) GetUsers(c *gin.Context) {
+func (repository *CountryRepository) GetCountries(c *gin.Context) {
 	var countries []models.Country
 	err := models.ListCountry(repository.Db, &countries)
 	if err != nil {
